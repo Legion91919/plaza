@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>plaza-api-dev</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Plaza.SharedKernel/Plaza.SharedKernel.csproj" />
+    <ProjectReference Include="../Modules/Profiles/Plaza.Profiles/Plaza.Profiles.csproj" />
+    <ProjectReference Include="../Modules/Groups/Plaza.Groups/Plaza.Groups.csproj" />
+    <ProjectReference Include="../Modules/Feed/Plaza.Feed/Plaza.Feed.csproj" />
+    <ProjectReference Include="../Modules/Events/Plaza.Events/Plaza.Events.csproj" />
+    <ProjectReference Include="../Modules/Notifications/Plaza.Notifications/Plaza.Notifications.csproj" />
+  </ItemGroup>
+</Project>

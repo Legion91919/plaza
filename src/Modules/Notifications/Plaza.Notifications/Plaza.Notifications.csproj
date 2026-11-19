@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../Plaza.SharedKernel/Plaza.SharedKernel.csproj" />
+    <ProjectReference Include="../Plaza.Notifications.Contracts/Plaza.Notifications.Contracts.csproj" />
+    <ProjectReference Include="../../Groups/Plaza.Groups.Contracts/Plaza.Groups.Contracts.csproj" />
+  </ItemGroup>
+</Project>
