@@ -15,6 +15,19 @@ flowchart LR
   api -.->|slice 2| db[(Postgres)]
 ```
 
+
+## Run it in GitHub Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Legion91919/plaza?quickstart=1)
+
+The dev container installs the SDKs, restores packages and runs every test once on first start. The same setup works locally with VS Code's Dev Containers extension.
+
+| What | Command | Port |
+|---|---|---|
+| API (Plaza) | `ASPNETCORE_ENVIRONMENT=Development ASPNETCORE_URLS=http://0.0.0.0:5102 dotnet run --project src/Plaza.Api` | 5102 |
+| Web app | `cd web && npm run dev` | 5173 |
+| All tests (same as CI) | `scripts/test-all.sh` | - |
+
 ## What it does (slice 1)
 - `GET /api/groups/{groupId}/posts`: the group feed, newest first (members only, otherwise 403).
 - `POST /api/groups/{groupId}/posts`: verified members post a `notice` or `safetyAlert` (`Idempotency-Key` header supported).
