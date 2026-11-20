@@ -2,6 +2,16 @@
 
 An original community social network for neighbourhood associations: verified residents post notices and safety alerts in their neighbourhood group, members read them newest-first, online members get a live notification, and moderators remove posts with an audit trail. Showcase project: the client (Buurt Forum) and every person, street and number are invented.
 
+## See it in action
+
+![Plaza walkthrough: the Lindehof notice board, a moderator's safety alert arriving as a live toast for another member, and a non-member being refused the group's feed](docs/media/demo.gif)
+
+| Neighbourhood board | Live alert for another member | Non-member refused |
+|---|---|---|
+| ![Lindehof Residents notice board](docs/media/group.png) | ![Live toast and the new safety alert on top of the feed](docs/media/live-alert.png) | ![Not-a-member message instead of the feed](docs/media/not-a-member.png) |
+
+Full-quality video: [docs/media/demo.mp4](docs/media/demo.mp4). Mobile: [docs/media/mobile.png](docs/media/mobile.png). Recorded from the running app with `demo/` (`cd demo && npm install && npm run record`); the recorded browser is Pieter's, and Naledi's alert is posted through the API as a separate client.
+
 ## Design at a glance
 **Brief:** 120 fictional neighbourhood associations run on scattered chat groups and email lists, so notices get lost and nobody knows who lives in the area. Plaza gives each neighbourhood one group with verified members, so a safety alert reaches every member within 10 seconds.
 

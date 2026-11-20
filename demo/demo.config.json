@@ -1,0 +1,9 @@
+{
+  "start": [
+    { "name": "api", "cmd": "dotnet run --project src/Plaza.Api --no-build", "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://localhost:5102" }, "ready": "http://localhost:5102/health/ready" },
+    { "name": "web", "cmd": "npm run dev -- --port 6102 --strictPort", "cwd": "web", "ready": "http://localhost:6102" }
+  ],
+  "url": "http://localhost:6102",
+  "viewport": { "width": 1280, "height": 800 },
+  "stepPauseMs": 1800
+}
